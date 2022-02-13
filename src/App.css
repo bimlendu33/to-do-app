@@ -1,0 +1,38 @@
+.App {
+  margin: 2rem 5rem;
+}
+
+.side-bar-wrapper {
+  border: 2px solid rgb(15, 192, 252);
+  height: 90vh;
+  text-align: center;
+}
+
+.todo-list-wrapper {
+  max-width: 45rem;
+  height: 90vh;
+  background-image: linear-gradient(to bottom, white, rgb(15, 192, 252));
+  text-align: center;
+}
+
+.todo-list-wrapper-sidebar {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .side-bar-wrapper {
+    display: none;
+  }
+
+  .todo-list-wrapper-sidebar {
+    display: block;
+  }
+
+  .App {
+    margin: 5rem 2rem;
+  }
+
+  .todo-list-wrapper {
+    height: auto;
+  }
+}

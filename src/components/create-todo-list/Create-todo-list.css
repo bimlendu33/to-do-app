@@ -1,0 +1,118 @@
+.create-todolist-view-wrapper {
+    border: 2px solid rebeccapurple;
+    width: 70%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.create-todo-list-container {
+    text-align: initial;
+    max-width: 80%;
+    position: relative;
+    top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 27rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    top: 10rem;
+
+}
+
+textarea {
+    height: 10rem;
+    max-height: 10rem;
+    position: relative;
+    min-height: 10rem;
+}
+
+textarea:focus {
+    box-shadow: none !important;
+}
+
+textarea.form-control.error-form {
+    border: 1px solid red;
+}
+
+.create-todo-helptext {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: -webkit-right;
+}
+
+.text-muted {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.create-todolist-item-action {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    padding: 0.5rem 2rem;
+    background: white;
+    color: deepskyblue;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    padding: 0.5rem 2rem;
+    background: white !important;
+    color: deepskyblue !important;
+    font-weight: 600;
+    border: none;
+}
+
+.back-button {
+    float: left;
+    position: relative;
+    left: 10px;
+    color: #0d6efd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.editable-div {
+    background-color: white;
+    height: 4rem;
+
+    border: 2px solid white !important;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+
+@media screen and (max-width: 900px) {
+    .todo-list-items-wrapper {
+        margin-top: 2rem;
+    }
+
+    .create-todo-list-container {
+        margin-top: 2rem;
+        top: 0rem;
+    }
+
+    .todo-list-container {
+        position: relative;
+        top: 0%;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .create-todolist-item-action {
+        margin-bottom: 7rem;
+
+    }
+}

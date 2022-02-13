@@ -1,0 +1,118 @@
+.todo-list-items-wrapper {
+    height: 28rem;
+}
+
+.todolist-view-wrapper {
+    border: 2px solid rebeccapurple;
+    width: 70%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.todo-list-container {
+    text-align: initial;
+    max-width: 80%;
+    position: relative;
+    top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25rem;
+    overflow-y: auto;
+    border-radius: .5rem;
+    font-weight: 700;
+    border: 2px solid white;
+
+}
+
+.todo-list-item {
+    list-style: none;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: deepskyblue;
+    margin-bottom: 1rem;
+    word-break: break-all;
+    font-size: 1.1rem;
+}
+
+
+.create-todolist-item-actions {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 4%;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    padding: 0.5rem 2rem;
+    background: white;
+    color: deepskyblue;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    padding: 0.5rem 2rem;
+    background: white !important;
+    color: deepskyblue !important;
+    font-weight: 600;
+    border: none;
+}
+
+.no-to-do-item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    top: 11rem;
+    font-style: italic;
+    font-weight: 400;
+    color: darkslategrey;
+}
+
+@media screen and (max-width: 900px) {
+    .todo-list-items-wrapper {
+        margin-top: 2rem;
+    }
+
+    .todo-list-container {
+        position: relative;
+        top: 0%;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .create-todolist-item-actions {
+        margin-bottom: 5rem;
+        margin-top: -3rem;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 1rem;
+}
